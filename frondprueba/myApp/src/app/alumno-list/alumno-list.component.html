@@ -1,0 +1,26 @@
+<h2>Lista de Alumnos</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Nombre Completo</th>
+      <th>Identificación</th>
+      <th>Número de Matrícula</th>
+      <th>Programa</th>
+      <th>Nota Promedio</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let alumno of alumnos">
+      <td>{{ alumno.nombreCompleto }}</td>
+      <td>{{ alumno.identificacion }}</td>
+      <td>{{ alumno.numeroMatricula }}</td>
+      <td>{{ alumno.programa }}</td>
+      <td>{{ alumno.notaPromedio }}</td>
+      <td>
+        <button (click)="editarAlumno(alumno.id)">Editar</button>
+        <button (click)="eliminarAlumno(alumno.id)">Eliminar</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

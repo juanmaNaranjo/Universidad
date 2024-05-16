@@ -1,0 +1,13 @@
+
+c
+java:S1192"MDefine a constant instead of duplicating this literal "El profesor " 8 times.(ÌŞ²Í
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÕŒÎ®ùÿÿÿÿ
+V	java:S107"AConstructor has 9 parameters, which is greater than 7 authorized.(®éåÀ
+@	java:S106"+Replace this use of System.out by a logger.(ÌŞ²Í
+E	java:S106"+Replace this use of System.out by a logger.(¦µá’øÿÿÿÿ
+?	java:S106""+Replace this use of System.out by a logger.(ùØ ?
+E	java:S106("+Replace this use of System.out by a logger.(Æİªûûÿÿÿÿ
+@	java:S106/"+Replace this use of System.out by a logger.(‰†Š³
+@	java:S1065"+Replace this use of System.out by a logger.(¶•î»
+?	java:S106;"+Replace this use of System.out by a logger.(ÿ„›
+E	java:S106A"+Replace this use of System.out by a logger.(´‰Ãşÿÿÿÿ

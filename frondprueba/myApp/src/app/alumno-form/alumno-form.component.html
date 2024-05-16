@@ -1,0 +1,45 @@
+<h2>{{ alumnoId ? 'Editar Alumno' : 'Agregar Alumno' }}</h2>
+<form>
+  <div>
+    <label for="nombreCompleto">Nombre Completo</label>
+    <input id="nombreCompleto" formControlName="nombreCompleto" />
+    <div *ngIf="alumnoForm.get('nombreCompleto').invalid && alumnoForm.get('nombreCompleto').touched">
+      Nombre completo es requerido.
+    </div>
+  </div>
+
+  <div>
+    <label for="identificacion">Identificación</label>
+    <input id="identificacion" formControlName="identificacion" />
+    <div *ngIf="alumnoForm.get('identificacion').invalid && alumnoForm.get('identificacion').touched">
+      Identificación es requerida.
+    </div>
+  </div>
+
+  <div>
+    <label for="numeroMatricula">Número de Matrícula</label>
+    <input id="numeroMatricula" formControlName="numeroMatricula" />
+    <div *ngIf="alumnoForm.get('numeroMatricula').invalid && alumnoForm.get('numeroMatricula').touched">
+      Número de matrícula es requerido.
+    </div>
+  </div>
+
+  <div>
+    <label for="programa">Programa</label>
+    <input id="programa" formControlName="programa" />
+    <div *ngIf="alumnoForm.get('programa').invalid && alumnoForm.get('programa').touched">
+      Programa es requerido.
+    </div>
+  </div>
+
+  <div>
+    <label for="notaPromedio">Nota Promedio</label>
+    <input id="notaPromedio" type="number" formControlName="notaPromedio" />
+    <div *ngIf="alumnoForm.get('notaPromedio').invalid && alumnoForm.get('notaPromedio').touched">
+      Nota promedio debe ser entre 0 y 10.
+    </div>
+  </div>
+
+  <button type="submit" [disabled]="alumnoForm.invalid">Guardar</button>
+  <button type="button" (click)="router.navigate(['/alumnos'])">Cancelar</button>
+</form>

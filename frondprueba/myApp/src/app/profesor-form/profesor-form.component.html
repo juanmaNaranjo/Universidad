@@ -1,0 +1,46 @@
+<h2>{{ profesorId ? 'Editar Profesor' : 'Agregar Profesor' }}</h2>
+<form >
+  <div>
+    <label for="nombreCompleto">Nombre Completo</label>
+    <input id="nombreCompleto" formControlName="nombreCompleto" />
+    <div *ngIf="profesorForm.get('nombreCompleto').invalid && profesorForm.get('nombreCompleto').touched">
+      Nombre completo es requerido.
+    </div>
+  </div>
+
+  <div>
+    <label for="identificacion">Identificación</label>
+    <input id="identificacion" formControlName="identificacion" />
+    <div *ngIf="profesorForm.get('identificacion').invalid && profesorForm.get('identificacion').touched">
+      Identificación es requerida.
+    </div>
+  </div>
+
+  <div>
+    <label for="salario">Salario</label>
+    <input id="salario" type="number" formControlName="salario" />
+    <div *ngIf="profesorForm.get('salario').invalid && profesorForm.get('salario').touched">
+      Salario es requerido.
+    </div>
+  </div>
+
+  <div>
+    <label for="dependencia">Dependencia</label>
+    <input id="dependencia" formControlName="dependencia" />
+    <div *ngIf="profesorForm.get('dependencia').invalid && profesorForm.get('dependencia').touched">
+      Dependencia es requerida.
+    </div>
+  </div>
+
+  <div>
+    <label for="materia">Materia</label>
+    <input id="materia" formControlName="materia" />
+    <div *ngIf="profesorForm.get('materia').invalid && profesorForm.get('materia').touched">
+      Materia es requerida.
+    </div>
+  </div>
+
+  <button type="submit" [disabled]="profesorForm.invalid">Guardar</button>
+  <button type="button" (click)="router.navigate(['/profesores'])">Cancelar</button>
+</form>
+

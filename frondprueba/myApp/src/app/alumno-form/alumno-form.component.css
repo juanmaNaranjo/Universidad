@@ -1,0 +1,52 @@
+/* Estilo para el contenedor del formulario */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  /* Estilo para los campos del formulario */
+  form div {
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para las etiquetas de los campos */
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  /* Estilo para los campos de entrada */
+  input[type="text"],
+  input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Estilo para los mensajes de error */
+  div.error {
+    color: #ff0000;
+    font-size: 14px;
+  }
+  
+  /* Estilo para los botones */
+  button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  

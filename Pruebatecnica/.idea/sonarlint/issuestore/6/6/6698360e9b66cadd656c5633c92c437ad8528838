@@ -1,0 +1,12 @@
+
+f
+java:S11926"KDefine a constant instead of duplicating this literal "El alumno " 7 times.(ÏÈž˜ùÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÕŒÎ®ùÿÿÿÿ
+[	java:S107"AConstructor has 9 parameters, which is greater than 7 authorized.(®ËÌ×ûÿÿÿÿ
+E	java:S1066"+Replace this use of System.out by a logger.(ÏÈž˜ùÿÿÿÿ
+@	java:S106<"+Replace this use of System.out by a logger.(®øÑ¶
+@	java:S106B"+Replace this use of System.out by a logger.(ïùüÉ
+@	java:S106I"+Replace this use of System.out by a logger.(·™Í‰
+@	java:S106O"+Replace this use of System.out by a logger.(·üÏÒ
+@	java:S106U"+Replace this use of System.out by a logger.(ùÎáø
+@	java:S106["+Replace this use of System.out by a logger.(ÂÞÉù
